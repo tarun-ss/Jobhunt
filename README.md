@@ -172,4 +172,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 - Research papers on ghost job detection
 - Open-source community
 
-t jobs and help job seekers**
+
