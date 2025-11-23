@@ -11,6 +11,20 @@ AI-powered job application automation platform with ghost job detection, ATS res
 - **Cold Email Generation**: Personalized outreach based on company research
 - **Application Tracking**: Monitor application status and auto-follow-up
 
+## 📸 Screenshots
+
+### Smart Dashboard
+Real-time job recommendations and application tracking.
+![Dashboard](screenshots/dashboard_main.png)
+
+### Profile & Stats
+Track your application progress and profile strength.
+![Profile](screenshots/profile_view.png)
+
+### Live Tech News
+Stay updated with the latest industry news while you apply.
+![Tech News](screenshots/tech_news.png)
+
 ## 🏗️ Architecture
 
 ```
@@ -34,16 +48,15 @@ AI-powered job application automation platform with ghost job detection, ATS res
 
 ## 🚀 Tech Stack
 
-- **Language**: Python 3.11+
+- **Frontend**: React + Vite + TailwindCSS
+- **Backend**: FastAPI + Uvicorn
+- **AI/LLM**: Groq API (Llama 3.3 70B)
 - **Agent Framework**: LangGraph
-- **MCP**: FastMCP (async operations, OAuth 2.1)
-- **LLM**: Anthropic Claude 3.5 Sonnet
-- **Vector DB**: Qdrant
-- **Graph DB**: Neo4j
-- **Document Store**: PostgreSQL 16 + pgvector
-- **Job Scraping**: Playwright + JSearch API
-- **ML**: XGBoost + SMOTE (ghost job detection)
-- **API**: FastAPI + Uvicorn
+- **Database**: Supabase (PostgreSQL)
+- **Vector DB**: Qdrant Cloud
+- **Graph DB**: Neo4j Aura (Optional)
+- **Job Scraping**: JobSpy (LinkedIn, Indeed, Glassdoor)
+- **ML**: XGBoost (Ghost Job Detection)
 
 ## 📦 Installation
 
