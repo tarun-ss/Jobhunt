@@ -163,9 +163,7 @@ Ways to contribute:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-## 📄 License
 
-MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🙏 Acknowledgments
 
@@ -174,12 +172,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 - Research papers on ghost job detection
 - Open-source community
 
-## 📞 Contact
-
-- Website: https://jobhunter.ai
-- Email: hello@jobhunter.ai
-- Twitter: @jobhunterai
-
----
-
-**Built with ❤️ to fight ghost jobs and help job seekers**
+t jobs and help job seekers**
