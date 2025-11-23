@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobHunter UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>JobHunter AI</h1>
+  </header>
+  <main>
+    <section id="upload-section">
+      <h2>Upload Resume</h2>
+      <input type="file" id="resume-file" accept=".pdf,.docx,.txt" />
+      <button id="upload-btn">Upload</button>
+    </section>
+    <section id="search-section">
+      <h2>Search Jobs</h2>
+      <input type="text" id="job-query" placeholder="e.g., senior software engineer" />
+      <select id="job-board">
+        <option value="linkedin">LinkedIn</option>
+        <option value="indeed">Indeed</option>
+      </select>
+      <button id="search-btn">Search</button>
+    </section>
+    <section id="results-section">
+      <h2>Job Results</h2>
+      <ul id="jobs-list"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

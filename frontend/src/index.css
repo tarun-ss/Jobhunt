@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ios-bg: #000000;
+  --ios-card: rgba(30, 30, 35, 0.4);
+  /* More transparent for glass effect */
+  --ios-card-hover: rgba(45, 45, 50, 0.5);
+  --ios-blue: #0A84FF;
+  --ios-green: #30D158;
+  --ios-indigo: #5E5CE6;
+  --ios-orange: #FF9F0A;
+  --ios-pink: #FF375F;
+  --ios-purple: #BF5AF2;
+  --ios-red: #FF453A;
+  --ios-teal: #64D2FF;
+  --ios-yellow: #FFD60A;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Liquid Wallpaper Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.5), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.4), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.4), transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.1), transparent 60%);
+  filter: blur(60px);
+  animation: liquid 20s ease-in-out infinite alternate;
+  background-size: 150% 150%;
+}
+
+@keyframes liquid {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* iOS Glassmorphism - Enhanced */
+.ios-glass {
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.ios-card {
+  background: var(--ios-card);
+  backdrop-filter: blur(25px) saturate(150%);
+  -webkit-backdrop-filter: blur(25px) saturate(150%);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+}
+
+.ios-card:hover {
+  transform: scale(1.02) translateY(-2px);
+  background: var(--ios-card-hover);
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Inputs */
+.ios-input {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.ios-input:focus {
+  background: rgba(0, 0, 0, 0.4);
+  outline: none;
+  border-color: var(--ios-blue);
+  box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.15);
+}
+
+/* Typography */
+.text-sf-display {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Glass Button Gradient */
+.btn-gradient {
+  background: linear-gradient(135deg, #0A84FF, #5E5CE6);
+  box-shadow: 0 4px 15px rgba(10, 132, 255, 0.3);
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 8px 25px rgba(10, 132, 255, 0.5);
+  transform: translateY(-1px);
+}
